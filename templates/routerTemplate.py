@@ -1,24 +1,24 @@
 from fastapi import APIRouter
 from app.services.NOME_RECURSO import create, getOne, getAll, update, delete
 
-router = APIRouter()
+router = APIRouter("/")
 
-@router.post("", status_code=201)
+@router.post("/")
 async def create_endpoint(payload):
     return create(payload)
 
-@router.get("/{id}", status_code=200)
+@router.get("/{id}")
 async def getOne_endpoint(id):
     return getOne(id)
 
-@router.get("/", status_code=200)
+@router.get("/")
 async def getAll_endpoint():
     return getAll()
 
-@router.put("/{id}", status_code=200)
+@router.put("/{id}")
 async def update_endpoint(id, payload):
     return update(id, payload)
 
-@router.delete("/{id}", status_code=204)
+@router.delete("/{id}")
 async def delete_endpoint(id):
     return delete(id)
