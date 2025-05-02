@@ -1,15 +1,15 @@
 def create(payload):
-    print("create service called")
+    return "create service called"
     
 def getOne(id):
-    print("getOne service called")
+    return "getOne service called"
     
 def getAll():
-    print("getAll service called")
+    return "getAll service called"
     
 def update(id, payload):
-    print("update service called")
+    return "update service called"
     
 def delete(id):
-    print("delete service called")
+    return "delete service called"
 
