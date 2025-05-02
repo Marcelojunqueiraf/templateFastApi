@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from app.services.NOME_RECURSO import create, getOne, getAll, update, delete
 
-router = APIRouter("/")
+router = APIRouter()
 
 @router.post("/")
 async def create_endpoint(payload):
