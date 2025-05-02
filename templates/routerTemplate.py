@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from app.services.NOME_MODULO import create, getOne, getAll, update, delete
+from app.services.NOME_RECURSO import create, getOne, getAll, update, delete
 
 router = APIRouter()
 
